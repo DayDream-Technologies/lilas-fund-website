@@ -1,0 +1,68 @@
+[
+  {
+    "id": "cornhole-tournament-2025",
+    "title": "Lila's Fund Bags for a Break Cornhole Tournament",
+    "date": "2025-05-16",
+    "time": "TBD",
+    "location": "Cedar Rock Sportsplex",
+    "description": "Join us for a fun day of cornhole to raise funds for families in need. Teams compete in a bracket-style tournament with prizes for winners.",
+    "ticketUrl": "https://www.lilasfund.org",
+    "type": "fundraiser",
+    "image": "/images/events/cornhole-tournament.jpg"
+  },
+  {
+    "id": "poker-run-florida-2025",
+    "title": "Ride for the House Poker Run - Florida",
+    "date": "2025-05-23",
+    "time": "TBD",
+    "location": "American Legion Post 40",
+    "description": "A scenic motorcycle poker run through Florida to raise money for Ronald McDonald House Charities.",
+    "ticketUrl": "https://www.lilasfund.org",
+    "type": "fundraiser",
+    "image": "/images/events/poker-run-florida.jpg"
+  },
+  {
+    "id": "golf-outing-kalamazoo-2025",
+    "title": "Lila's Fund 1st Annual Golf Outing - Kalamazoo",
+    "date": "2025-07-11",
+    "time": "TBD",
+    "location": "Indian Run Golf Club",
+    "description": "Our inaugural Kalamazoo golf outing. Enjoy a day on the course while supporting families caring for hospitalized children.",
+    "ticketUrl": "https://www.lilasfund.org",
+    "type": "fundraiser",
+    "image": "/images/events/golf-outing-kalamazoo.jpg"
+  },
+  {
+    "id": "poker-run-michigan-2025",
+    "title": "Ride for the House - Michigan",
+    "date": "2025-07-17",
+    "time": "TBD",
+    "location": "Rebel Road - Bike Time",
+    "description": "Michigan's edition of our popular motorcycle poker run fundraiser.",
+    "ticketUrl": "https://www.lilasfund.org",
+    "type": "fundraiser",
+    "image": "/images/events/poker-run-michigan.jpg"
+  },
+  {
+    "id": "heart-walk-2026",
+    "title": "Team Lila's Fund Congenital Heart Walk 2026",
+    "date": "2026-08-02",
+    "time": "TBD",
+    "location": "Millennium Park Grant Pavilion",
+    "description": "Walk with Team Lila's Fund at the annual Congenital Heart Walk. Help raise awareness and funds for CHD research.",
+    "ticketUrl": "https://www.lilasfund.org",
+    "type": "walk",
+    "image": "/images/events/heart-walk.jpg"
+  },
+  {
+    "id": "golf-outing-gr-2025",
+    "title": "Lila's Fund 3rd Annual Golf Outing Grand Rapids",
+    "date": "2025-09-12",
+    "time": "TBD",
+    "location": "The Mines Golf Club",
+    "description": "Our signature Grand Rapids golf outing returns for its third year. A full day of golf, food, and fundraising.",
+    "ticketUrl": "https://www.lilasfund.org",
+    "type": "fundraiser",
+    "image": "/images/events/golf-outing-gr.jpg"
+  }
+]

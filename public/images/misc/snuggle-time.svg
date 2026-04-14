@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+  <rect fill="#F5EDE0" width="600" height="450"/>
+  <rect fill="#D4708A" opacity="0.15" width="600" height="450" rx="8"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+    fill="#D4708A" font-family="system-ui,sans-serif" font-size="37.5" font-weight="600">
+    Snuggle Time
+  </text>
+  <text x="50%" y="281.25" dominant-baseline="middle" text-anchor="middle"
+    fill="#9B8EC1" font-family="system-ui,sans-serif" font-size="22.5">
+    600×450 — Replace with real image
+  </text>
+</svg>

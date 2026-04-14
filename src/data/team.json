@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Julie Kelley",
+    "role": "CEO & Co-Founder",
+    "image": "/images/team/julie-kelley.svg",
+    "bio": "Lila's mother and the heart behind Lila's Fund. Julie channels her experience caring for Lila into supporting other families facing similar challenges."
+  },
+  {
+    "name": "Korey Kelley",
+    "role": "Co-Founder",
+    "image": "/images/team/korey-kelley.svg",
+    "bio": "Lila's father and co-founder of Lila's Fund. Korey works tirelessly to honor Lila's memory through community events and outreach."
+  },
+  {
+    "name": "Amelia Kelley",
+    "role": "Junior Ambassador",
+    "image": "/images/team/amelia-kelley.svg",
+    "bio": "Lila's big sister. Amelia helps by picking out snacks for families, giving gifts to patients, and helping mom with events."
+  },
+  {
+    "name": "Lila Kelley",
+    "role": "Our Inspiration",
+    "image": "/images/team/lila-kelley.svg",
+    "bio": "Lila June Kelley (5/13/23 - 11/5/23). Her courage and spirit inspire everything we do. Lila's legacy lives on in every family we support."
+  }
+]

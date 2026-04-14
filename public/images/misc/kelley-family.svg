@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <rect fill="#F5EDE0" width="900" height="500"/>
+  <rect fill="#D4708A" opacity="0.15" width="900" height="500" rx="8"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+    fill="#D4708A" font-family="system-ui,sans-serif" font-size="41.666666666666664" font-weight="600">
+    Kelley Family
+  </text>
+  <text x="50%" y="312.5" dominant-baseline="middle" text-anchor="middle"
+    fill="#9B8EC1" font-family="system-ui,sans-serif" font-size="25">
+    900×500 — Replace with real image
+  </text>
+</svg>

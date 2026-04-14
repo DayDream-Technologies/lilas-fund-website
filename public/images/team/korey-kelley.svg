@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect fill="#F5EDE0" width="400" height="400"/>
+  <rect fill="#D4708A" opacity="0.15" width="400" height="400" rx="8"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+    fill="#D4708A" font-family="system-ui,sans-serif" font-size="33.333333333333336" font-weight="600">
+    Korey Kelley
+  </text>
+  <text x="50%" y="250" dominant-baseline="middle" text-anchor="middle"
+    fill="#9B8EC1" font-family="system-ui,sans-serif" font-size="20">
+    400×400 — Replace with real image
+  </text>
+</svg>

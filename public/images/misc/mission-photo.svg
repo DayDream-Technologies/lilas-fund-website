@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+  <rect fill="#F5EDE0" width="600" height="750"/>
+  <rect fill="#D4708A" opacity="0.15" width="600" height="750" rx="8"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+    fill="#D4708A" font-family="system-ui,sans-serif" font-size="50" font-weight="600">
+    Mission
+  </text>
+  <text x="50%" y="450" dominant-baseline="middle" text-anchor="middle"
+    fill="#9B8EC1" font-family="system-ui,sans-serif" font-size="30">
+    600×750 — Replace with real image
+  </text>
+</svg>
