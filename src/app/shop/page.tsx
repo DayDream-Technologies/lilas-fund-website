@@ -4,7 +4,10 @@ import Hero from "@/components/common/Hero";
 import Section, { SectionHeader } from "@/components/ui/Section";
 import ProductGrid from "@/components/shop/ProductGrid";
 import Button from "@/components/ui/Button";
-import products from "@/data/products.json";
+import productsData from "@/data/products.json";
+import type { Product } from "@/types/product";
+
+const products = productsData as unknown as Product[];
 
 export const metadata: Metadata = {
   title: "Shop",

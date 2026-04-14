@@ -2,24 +2,26 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { assetUrl } from "@/lib/base-path";
 import { ShoppingBag } from "lucide-react";
 import Button from "../ui/Button";
 import Card from "../ui/Card";
-import { getProductCheckoutUrl } from "@/lib/square";
-
-interface Product {
-  id: string;
-  name: string;
-  price: number;
-  image: string;
-  description: string;
-  sizes: string[];
-  category: string;
-}
+import { useCart } from "@/context/CartContext";
+import type { Product } from "@/types/product";
 
 export default function ProductCard({ product }: { product: Product }) {
+  const { addLine } = useCart();
   const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
+  const [justAdded, setJustAdded] = useState(false);
+
+  const handleAddToCart = () => {
+    const ok = addLine(product, selectedSize, 1);
+    if (ok) {
+      setJustAdded(true);
+      window.setTimeout(() => setJustAdded(false), 2000);
+    }
+  };
 
   return (
     <Card>
@@ -47,6 +49,7 @@ export default function ProductCard({ product }: { product: Product }) {
               {product.sizes.map((size) => (
                 <button
                   key={size}
+                  type="button"
                   onClick={() => setSelectedSize(size)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                     selectedSize === size
@@ -61,15 +64,23 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
         )}
 
-        <Button
-          href={getProductCheckoutUrl(product.id)}
-          external
-          size="sm"
-          className="w-full"
-        >
-          <ShoppingBag className="w-4 h-4 mr-2" />
-          Buy Now
-        </Button>
+        <div className="flex flex-col gap-2">
+          <Button
+            type="button"
+            size="sm"
+            className="w-full"
+            onClick={handleAddToCart}
+          >
+            <ShoppingBag className="w-4 h-4 mr-2" />
+            {justAdded ? "Added to cart" : "Add to cart"}
+          </Button>
+          <Link
+            href="/shop/cart/"
+            className="text-center text-sm text-charcoal-light hover:text-rose-primary transition-colors"
+          >
+            View cart
+          </Link>
+        </div>
       </div>
     </Card>
   );

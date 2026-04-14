@@ -3,12 +3,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown, Heart } from "lucide-react";
+import { Menu, X, ChevronDown, Heart, ShoppingCart } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
 import { assetUrl } from "@/lib/base-path";
+import { useCart } from "@/context/CartContext";
 import Button from "../ui/Button";
 
 export default function Header() {
+  const { itemCount } = useCart();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -77,28 +79,49 @@ export default function Header() {
                 </Link>
 
                 {link.children && openDropdown === link.label && (
-                  <div className="absolute top-full left-0 mt-1 bg-white rounded-xl shadow-xl border border-cream-dark py-2 min-w-[200px]">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="block px-4 py-2.5 text-sm text-charcoal hover:text-rose-primary hover:bg-cream transition-colors"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                  <div
+                    className="absolute top-full left-0 z-20 pt-2 min-w-[200px]"
+                    role="menu"
+                    aria-label={`${link.label} submenu`}
+                  >
+                    <div className="bg-white rounded-xl shadow-xl border border-cream-dark py-2">
+                      {link.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="block px-4 py-2.5 text-sm text-charcoal hover:text-rose-primary hover:bg-cream transition-colors"
+                          role="menuitem"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-3">
-            <Button href="/programs/donate" size="sm">
-              <Heart className="w-4 h-4 mr-1.5" />
-              Donate
-            </Button>
+          {/* Cart + Desktop CTA */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            <Link
+              href="/shop/cart/"
+              className="relative p-2 rounded-lg text-charcoal hover:text-rose-primary hover:bg-cream-dark/50 transition-colors"
+              aria-label={`Shopping cart${itemCount > 0 ? `, ${itemCount} items` : ""}`}
+            >
+              <ShoppingCart className="w-5 h-5" />
+              {itemCount > 0 && (
+                <span className="absolute -top-0.5 -right-0.5 min-w-[1.125rem] h-[1.125rem] px-1 flex items-center justify-center rounded-full bg-rose-primary text-white text-[10px] font-bold leading-none">
+                  {itemCount > 99 ? "99+" : itemCount}
+                </span>
+              )}
+            </Link>
+            <div className="hidden lg:flex items-center gap-3">
+              <Button href="/programs/donate" size="sm">
+                <Heart className="w-4 h-4 mr-1.5" />
+                Donate
+              </Button>
+            </div>
           </div>
 
           {/* Mobile menu button */}

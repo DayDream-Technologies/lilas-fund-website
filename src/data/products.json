@@ -2,82 +2,134 @@
   {
     "id": "quarter-zip-pullover",
     "name": "Lightweight Quarter-Zip Pullover (Unisex)",
-    "price": 30.50,
+    "price": 30.5,
     "image": "/images/products/placeholder.svg",
     "description": "Comfortable lightweight quarter-zip pullover featuring the Lila's Fund logo.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
-    "category": "apparel"
+    "category": "apparel",
+    "printfulVariantIds": {
+      "S": 40101000101,
+      "M": 40101000102,
+      "L": 40101000103,
+      "XL": 40101000104,
+      "2XL": 40101000105
+    }
   },
   {
     "id": "womens-golf-polo",
     "name": "Under Armour Women's Golf Polo",
-    "price": 66.50,
+    "price": 66.5,
     "image": "/images/products/placeholder.svg",
     "description": "Premium Under Armour women's golf polo with Lila's Fund branding.",
     "sizes": ["S", "M", "L", "XL"],
-    "category": "apparel"
+    "category": "apparel",
+    "printfulVariantIds": {
+      "S": 40101000201,
+      "M": 40101000202,
+      "L": 40101000203,
+      "XL": 40101000204
+    }
   },
   {
     "id": "mens-golf-polo",
     "name": "Under Armour Men's Polo Golf Shirt",
-    "price": 66.50,
+    "price": 66.5,
     "image": "/images/products/placeholder.svg",
     "description": "Premium Under Armour men's polo golf shirt with Lila's Fund branding.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
-    "category": "apparel"
+    "category": "apparel",
+    "printfulVariantIds": {
+      "S": 40101000301,
+      "M": 40101000302,
+      "L": 40101000303,
+      "XL": 40101000304,
+      "2XL": 40101000305
+    }
   },
   {
     "id": "long-sleeve-shirt",
     "name": "Lila's Fund Long Sleeve Shirt",
-    "price": 30.00,
+    "price": 30.0,
     "image": "/images/products/placeholder.svg",
     "description": "Cozy long sleeve shirt with Lila's Fund design.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
-    "category": "apparel"
+    "category": "apparel",
+    "printfulVariantIds": {
+      "S": 40101000401,
+      "M": 40101000402,
+      "L": 40101000403,
+      "XL": 40101000404,
+      "2XL": 40101000405
+    }
   },
   {
     "id": "chuck-a-puck-ls",
     "name": "Chuck-A-Puck Event T-Shirt (LS)",
-    "price": 30.00,
+    "price": 30.0,
     "image": "/images/products/placeholder.svg",
     "description": "Long sleeve event t-shirt from the Chuck-A-Puck fundraiser.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
-    "category": "apparel"
+    "category": "apparel",
+    "printfulVariantIds": {
+      "S": 40101000501,
+      "M": 40101000502,
+      "L": 40101000503,
+      "XL": 40101000504,
+      "2XL": 40101000505
+    }
   },
   {
     "id": "youth-heart-month-tee",
     "name": "Youth Heart Month T-Shirt",
-    "price": 11.00,
+    "price": 11.0,
     "image": "/images/products/placeholder.svg",
     "description": "Youth t-shirt celebrating Heart Month awareness.",
     "sizes": ["YS", "YM", "YL"],
-    "category": "youth"
+    "category": "youth",
+    "printfulVariantIds": {
+      "YS": 40101000601,
+      "YM": 40101000602,
+      "YL": 40101000603
+    }
   },
   {
     "id": "youth-long-sleeve-tee",
     "name": "Youth Long Sleeve Tee",
-    "price": 19.00,
+    "price": 19.0,
     "image": "/images/products/placeholder.svg",
     "description": "Youth long sleeve tee with Lila's Fund logo.",
     "sizes": ["YS", "YM", "YL"],
-    "category": "youth"
+    "category": "youth",
+    "printfulVariantIds": {
+      "YS": 40101000701,
+      "YM": 40101000702,
+      "YL": 40101000703
+    }
   },
   {
     "id": "youth-long-sleeve-tee-premium",
     "name": "Youth Long Sleeve Tee (Premium)",
-    "price": 25.00,
+    "price": 25.0,
     "image": "/images/products/placeholder.svg",
     "description": "Premium youth long sleeve tee with special Lila's Fund design.",
     "sizes": ["YS", "YM", "YL"],
-    "category": "youth"
+    "category": "youth",
+    "printfulVariantIds": {
+      "YS": 40101000801,
+      "YM": 40101000802,
+      "YL": 40101000803
+    }
   },
   {
     "id": "trucker-cap",
     "name": "Lila's Fund Trucker Cap",
-    "price": 17.50,
+    "price": 17.5,
     "image": "/images/products/placeholder.svg",
     "description": "Classic trucker cap with embroidered Lila's Fund logo.",
     "sizes": ["One Size"],
-    "category": "accessories"
+    "category": "accessories",
+    "printfulVariantIds": {
+      "One Size": 40101000901
+    }
   }
 ]

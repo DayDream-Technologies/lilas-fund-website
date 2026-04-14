@@ -2,16 +2,7 @@
 
 import { useState } from "react";
 import ProductCard from "./ProductCard";
-
-interface Product {
-  id: string;
-  name: string;
-  price: number;
-  image: string;
-  description: string;
-  sizes: string[];
-  category: string;
-}
+import type { Product } from "@/types/product";
 
 const CATEGORIES = [
   { key: "all", label: "All" },

@@ -8,7 +8,7 @@ Official website for Lila's Fund, a nonprofit dedicated to keeping the legacy of
 - **Styling**: Tailwind CSS v4 with custom design system
 - **Icons**: Lucide React + custom social SVGs
 - **Animations**: Framer Motion
-- **Payments**: Square (donations + shop)
+- **Payments**: Square (donations); merchandise checkout posts to a serverless Printful integration (see [PRINTFUL_SETUP.md](PRINTFUL_SETUP.md))
 - **Events**: Google Calendar API
 - **Contact Form**: Formspree
 - **Deployment**: GitHub Pages via GitHub Actions
@@ -52,7 +52,8 @@ cp .env.example .env.local
 
 See the setup guides for detailed instructions:
 
-- [SQUARE_MIGRATION.md](SQUARE_MIGRATION.md) - Setting up Square for donations and shop
+- [SQUARE_MIGRATION.md](SQUARE_MIGRATION.md) - Square for donations
+- [PRINTFUL_SETUP.md](PRINTFUL_SETUP.md) - Printful variant IDs, checkout API URL, and serverless handler
 - [GOOGLE_CALENDAR_SETUP.md](GOOGLE_CALENDAR_SETUP.md) - Setting up Google Calendar for events
 
 ## Images
@@ -87,6 +88,7 @@ Use an empty base path: in the workflow, remove or override `NEXT_PUBLIC_BASE_PA
 | `GOOGLE_CALENDAR_API_KEY` | Google Calendar API key |
 | `SQUARE_APP_ID` | Square Application ID |
 | `SQUARE_LOCATION_ID` | Square Location ID |
+| `NEXT_PUBLIC_CHECKOUT_API_URL` | Full URL of the serverless Printful order endpoint (see [PRINTFUL_SETUP.md](PRINTFUL_SETUP.md)) |
 
 ## Project Structure
 
@@ -97,13 +99,13 @@ src/
     contact/            # Contact form
     events/             # Google Calendar events
     programs/           # Donate, Hug of Hope
-    shop/               # Product store
+    shop/               # Product store, cart, checkout
   components/           # Reusable React components
     common/             # Hero, TeamMember, SponsorBar
     donations/          # DonationForm, FundCard
     events/             # EventCard, EventCalendar, UpcomingEvents
     layout/             # Header, Footer
-    shop/               # ProductCard, ProductGrid
+    shop/               # ProductCard, ProductGrid, cart, checkout
     ui/                 # Button, Card, Section, AnimatedCounter, etc.
   data/                 # Static JSON data files
   lib/                  # Utility functions and constants

@@ -10,6 +10,7 @@ import UpcomingEvents from "@/components/events/UpcomingEvents";
 import testimonials from "@/data/testimonials.json";
 import team from "@/data/team.json";
 import sponsors from "@/data/sponsors.json";
+import clientLogos from "@/data/client-logos.json";
 
 const missionCards = [
   {
@@ -166,6 +167,14 @@ export default function HomePage() {
           subtitle="Hear from the families whose lives have been touched by Lila's Fund."
         />
         <TestimonialCarousel testimonials={testimonials} />
+      </Section>
+
+      {/* Partner / sponsor logo carousel */}
+      <Section background="white">
+        <SponsorBar
+          sponsors={clientLogos}
+          eyebrow="Trusted by leading companies"
+        />
       </Section>
 
       {/* Team */}

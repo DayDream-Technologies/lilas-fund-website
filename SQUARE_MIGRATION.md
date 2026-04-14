@@ -1,6 +1,6 @@
 # Square Payment Integration - Migration Guide
 
-This guide walks you through setting up Square for accepting donations and processing shop orders on the Lila's Fund website.
+This guide walks you through setting up Square for **donations** on the Lila's Fund website. **Merchandise** is fulfilled through Printful; see [PRINTFUL_SETUP.md](PRINTFUL_SETUP.md) for variant IDs and the checkout API.
 
 ## Why Square?
 
@@ -31,19 +31,9 @@ Create the following items in **Square Dashboard > Items**:
 | Cups of Kindness Fund Donation | Variable | Allow custom amounts |
 | Swaddle Drive Fund Donation | Variable | Allow custom amounts |
 
-### Shop Products
+### Shop products (Printful)
 
-Create each product with variants (sizes) in **Square Dashboard > Items**:
-
-- Lightweight Quarter-Zip Pullover (Unisex) - $30.50 - Sizes: S, M, L, XL, 2XL
-- Under Armour Women's Golf Polo - $66.50 - Sizes: S, M, L, XL
-- Under Armour Men's Polo Golf Shirt - $66.50 - Sizes: S, M, L, XL, 2XL
-- Lila's Fund Long Sleeve Shirt - $30.00 - Sizes: S, M, L, XL, 2XL
-- Chuck-A-Puck Event T-Shirt (LS) - $30.00 - Sizes: S, M, L, XL, 2XL
-- Youth Heart Month T-Shirt - $11.00 - Sizes: YS, YM, YL
-- Youth Long Sleeve Tee - $19.00 - Sizes: YS, YM, YL
-- Youth Long Sleeve Tee (Premium) - $25.00 - Sizes: YS, YM, YL
-- Lila's Fund Trucker Cap - $17.50 - One Size
+The online store uses **Printful** for inventory and fulfillment, not Square catalog items. Configure products and `variant_id` values in `src/data/products.json` and deploy the checkout API as described in [PRINTFUL_SETUP.md](PRINTFUL_SETUP.md).
 
 ### Recurring Payments (Monthly Donors)
 
@@ -75,9 +65,8 @@ Create each product with variants (sizes) in **Square Dashboard > Items**:
 This is the simplest approach for a GitHub Pages site:
 
 1. In Square Dashboard, go to **Online Checkout > Checkout Links**
-2. Create a checkout link for each donation tier and product
-3. Update `src/lib/square.ts` with the actual checkout URLs
-4. Update `src/data/products.json` with Square item IDs
+2. Create a checkout link for each **donation** tier
+3. Wire donation URLs in `src/lib/square.ts` if you use custom links (merchandise uses Printful; see [PRINTFUL_SETUP.md](PRINTFUL_SETUP.md))
 
 ### Option B: Square Web Payments SDK (Advanced)
 
@@ -125,9 +114,9 @@ Before fully migrating:
 
 1. Use Square Sandbox credentials
 2. Test each donation amount (one-time and recurring)
-3. Test each shop product checkout
-4. Verify receipts are sent correctly
-5. Check that orders appear in Square Dashboard
+3. Test merchandise checkout end-to-end using Printful (see [PRINTFUL_SETUP.md](PRINTFUL_SETUP.md))
+4. Verify receipts are sent correctly for donations
+5. Check that donations appear in Square Dashboard
 6. Test on mobile devices
 
 ## Step 9: Go Live

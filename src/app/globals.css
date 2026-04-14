@@ -36,3 +36,31 @@ h1, h2, h3, h4, h5, h6 {
 html {
   scroll-behavior: smooth;
 }
+
+/* Sponsor logo marquee (see SponsorBar) */
+@keyframes sponsor-logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 1.5rem));
+  }
+}
+
+.sponsor-logo-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: max-content;
+  animation: sponsor-logo-scroll 60s linear infinite;
+}
+
+.sponsor-logo-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-logo-track {
+    animation: none;
+  }
+}

@@ -19,13 +19,6 @@ export function getDonationCheckoutUrl(
   return `https://checkout.square.site/merchant/${SQUARE_LOCATION_ID}/checkout?${params}`;
 }
 
-export function getProductCheckoutUrl(productId: string): string {
-  if (!SQUARE_APP_ID) {
-    return "#shop";
-  }
-  return `https://checkout.square.site/merchant/${SQUARE_LOCATION_ID}/checkout?item=${productId}`;
-}
-
 export function isSquareConfigured(): boolean {
   return Boolean(SQUARE_APP_ID && SQUARE_LOCATION_ID);
 }
