@@ -4,6 +4,7 @@ import Hero from "@/components/common/Hero";
 import Section, { SectionHeader } from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import { Heart } from "lucide-react";
+import { assetUrl } from "@/lib/base-path";
 
 export const metadata: Metadata = {
   title: "Meet Lila",
@@ -17,63 +18,63 @@ const timeline = [
     title: "A Special Diagnosis",
     content:
       "At our 20-week ultrasound we found out we were having another little girl \u2014 a special heart warrior. Lila was diagnosed with Mosaic Trisomy 16 and a complex Congenital Heart Defect (CHD) including Pulmonary Atresia, Right Aortic Arch, Complete AVSD, and several other conditions.",
-    image: "/images/lila/ultrasound.jpg",
+    image: "/images/lila/placeholder.svg",
   },
   {
     date: "May 13, 2023",
     title: "Lila's Journey Begins",
     content:
       "At 35 weeks, Lila June Kelley entered the world weighing 3lbs 8oz and 15 inches. She spent her first month in the NICU at C.S. Mott Children's Hospital. She hit her goal weight of 4lbs 8oz and was ready for her first procedure: stenting her PDA.",
-    image: "/images/lila/born.jpg",
+    image: "/images/lila/placeholder.svg",
   },
   {
     date: "July 10, 2023",
     title: "Discharge Day",
     content:
       "After weeks of recovery from an emergency open-chest surgery needed when her vessel spasmed during her first procedure, Lila was finally well enough to come home. She needed time to grow before her first planned open-heart surgery.",
-    image: "/images/lila/discharge.jpg",
+    image: "/images/lila/placeholder.svg",
   },
   {
     date: "July 27, 2023",
     title: "Back to the Hospital",
     content:
       "Lila was not acting like herself. We were rushed back to the PCTU at C.S. Mott Children's Hospital via ambulance. She had the rhinovirus and was also found to have a rare Morgagni diaphragmatic hernia. The Ronald McDonald House Charities welcomed us with open arms.",
-    image: "/images/lila/hospital-return.jpg",
+    image: "/images/lila/placeholder.svg",
   },
   {
     date: "August 13, 2023",
     title: "A Fighter Through and Through",
     content:
       "While recovering from the rhinovirus, Lila went into respiratory failure and was intubated. She was diagnosed with cerebral hypoxia which led to a stroke and seizures. Despite this, she recovered remarkably well.",
-    image: "/images/lila/fighting.jpg",
+    image: "/images/lila/placeholder.svg",
   },
   {
     date: "September 15, 2023",
     title: "Critical Surgery",
     content:
       "Lila's right lung collapsed because her intestines had moved into her chest cavity. Despite high risks given her CHD and respiratory status, she went through surgery and did well during the procedure.",
-    image: "/images/lila/surgery.jpg",
+    image: "/images/lila/placeholder.svg",
   },
   {
     date: "September 29 \u2013 October 10, 2023",
     title: "ECMO & Recovery",
     content:
       "Lila was placed on ECMO, a form of life support. After a procedure to upsize her shunt, she came off ECMO. The road was long \u2014 on and off the ventilator, a kinked shunt that required stenting \u2014 but she kept fighting.",
-    image: "/images/lila/ecmo.jpg",
+    image: "/images/lila/placeholder.svg",
   },
   {
     date: "October 15, 2023",
     title: "A Precious Moment",
     content:
       "For the first time in 32 days, we got to hold our girl. That moment was everything.",
-    image: "/images/lila/holding.jpg",
+    image: "/images/lila/placeholder.svg",
   },
   {
     date: "November 5, 2023",
     title: "Forever Our Angel",
     content:
       "After being diagnosed with Airway Malacia and Bronchus Suis, and with limited medical interventions remaining, Lila passed away peacefully in our arms. She will forever be our heart warrior, our inspiration, and our angel.",
-    image: "/images/lila/angel.jpg",
+    image: "/images/lila/placeholder.svg",
   },
 ];
 
@@ -91,7 +92,7 @@ export default function MeetLilaPage() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="relative w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-xl ring-4 ring-rose-light">
             <Image
-              src="/images/lila/lila-portrait.svg"
+              src={assetUrl("/images/lila/lila-portrait.svg")}
               alt="Lila June Kelley"
               fill
               className="object-cover"
@@ -144,7 +145,7 @@ export default function MeetLilaPage() {
               <div className={`hidden md:block md:w-1/2 ${i % 2 === 0 ? "md:pl-12" : "md:pr-12"}`}>
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-md">
                   <Image
-                    src={entry.image}
+                    src={assetUrl(entry.image)}
                     alt={entry.title}
                     fill
                     className="object-cover"

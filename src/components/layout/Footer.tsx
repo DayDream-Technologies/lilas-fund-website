@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Heart, Mail } from "lucide-react";
 import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon } from "../ui/SocialIcons";
 import { NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
+import { assetUrl } from "@/lib/base-path";
 
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-4">
               <Image
-                src="/images/logo.svg"
+                src={assetUrl("/images/logo.svg")}
                 alt="Lila's Fund"
                 width={45}
                 height={45}

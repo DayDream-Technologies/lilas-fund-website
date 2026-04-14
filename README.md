@@ -67,7 +67,19 @@ See `scripts/download-images.mjs` for the full file naming convention.
 
 ## Deployment
 
-The site auto-deploys to GitHub Pages when pushing to `main`. Configure these GitHub Secrets:
+The site auto-deploys to GitHub Pages when pushing to `main`.
+
+### GitHub Pages project URL (`username.github.io/repo-name`)
+
+The workflow sets `NEXT_PUBLIC_BASE_PATH=/<repository-name>` so scripts, fonts, and images load under the project path (for example `/lilas-fund-website/_next/...`). Do not remove this unless you use a **custom domain at the site root** (see below).
+
+Optional: set repository secret `NEXT_PUBLIC_SITE_URL` to your real public URL (for example `https://daydream-technologies.github.io/lilas-fund-website`) so Open Graph metadata matches the deployed site.
+
+### Custom domain at root (e.g. `www.lilasfund.org`)
+
+Use an empty base path: in the workflow, remove or override `NEXT_PUBLIC_BASE_PATH`, and configure DNS/GitHub Pages custom domain as documented by GitHub.
+
+### Other GitHub Secrets
 
 | Secret | Description |
 |--------|-------------|

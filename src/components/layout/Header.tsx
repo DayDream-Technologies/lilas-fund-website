@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown, Heart } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
+import { assetUrl } from "@/lib/base-path";
 import Button from "../ui/Button";
 
 export default function Header() {
@@ -40,7 +41,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0">
             <Image
-              src="/images/logo.svg"
+              src={assetUrl("/images/logo.svg")}
               alt="Lila's Fund"
               width={50}
               height={50}

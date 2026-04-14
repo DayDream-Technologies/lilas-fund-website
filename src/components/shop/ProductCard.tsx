@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { assetUrl } from "@/lib/base-path";
 import { ShoppingBag } from "lucide-react";
 import Button from "../ui/Button";
 import Card from "../ui/Card";
@@ -24,7 +25,7 @@ export default function ProductCard({ product }: { product: Product }) {
     <Card>
       <div className="relative aspect-square bg-cream-dark">
         <Image
-          src={product.image}
+          src={assetUrl(product.image)}
           alt={product.name}
           fill
           className="object-cover"

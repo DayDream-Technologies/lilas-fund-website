@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect fill="#FFF8F0" width="600" height="600"/>
+  <rect fill="#D4708A" opacity="0.12" width="600" height="600"/>
+  <text x="50%" y="48%" dominant-baseline="middle" text-anchor="middle" fill="#D4708A" font-family="system-ui,sans-serif" font-size="28" font-weight="600">Product photo</text>
+  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#9B8EC1" font-family="system-ui,sans-serif" font-size="14">Replace in /public/images/products/</text>
+</svg>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetUrl } from "@/lib/base-path";
 
 interface TeamMemberProps {
   name: string;
@@ -12,7 +13,7 @@ export default function TeamMember({ name, role, image, bio }: TeamMemberProps) 
     <div className="group text-center">
       <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden shadow-lg ring-4 ring-white group-hover:ring-rose-light transition-all duration-300">
         <Image
-          src={image}
+          src={assetUrl(image)}
           alt={name}
           fill
           className="object-cover"

@@ -16,7 +16,11 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://www.lilasfund.org";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Lila's Fund | Support for Families with Hospitalized Children",
     template: "%s | Lila's Fund",
@@ -36,7 +40,7 @@ export const metadata: Metadata = {
     title: "Lila's Fund | Providing Love, Hope, and Support",
     description:
       "Supporting families with hospitalized children through love, hope, and essential resources.",
-    url: "https://www.lilasfund.org",
+    url: siteUrl,
     siteName: "Lila's Fund",
     type: "website",
   },

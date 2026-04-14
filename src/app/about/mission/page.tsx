@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Heart, Coffee, Gift, DollarSign } from "lucide-react";
+import { assetUrl } from "@/lib/base-path";
 import Hero from "@/components/common/Hero";
 import Section, { SectionHeader } from "@/components/ui/Section";
 import Card, { CardBody } from "@/components/ui/Card";
@@ -65,7 +66,7 @@ export default function MissionPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/misc/mission-photo.svg"
+                src={assetUrl("/images/misc/mission-photo.svg")}
                 alt="Lila's Fund supporting families"
                 fill
                 className="object-cover"

@@ -3,7 +3,7 @@
     "id": "quarter-zip-pullover",
     "name": "Lightweight Quarter-Zip Pullover (Unisex)",
     "price": 30.50,
-    "image": "/images/products/quarter-zip-pullover.jpg",
+    "image": "/images/products/placeholder.svg",
     "description": "Comfortable lightweight quarter-zip pullover featuring the Lila's Fund logo.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
     "category": "apparel"
@@ -12,7 +12,7 @@
     "id": "womens-golf-polo",
     "name": "Under Armour Women's Golf Polo",
     "price": 66.50,
-    "image": "/images/products/womens-golf-polo.jpg",
+    "image": "/images/products/placeholder.svg",
     "description": "Premium Under Armour women's golf polo with Lila's Fund branding.",
     "sizes": ["S", "M", "L", "XL"],
     "category": "apparel"
@@ -21,7 +21,7 @@
     "id": "mens-golf-polo",
     "name": "Under Armour Men's Polo Golf Shirt",
     "price": 66.50,
-    "image": "/images/products/mens-golf-polo.jpg",
+    "image": "/images/products/placeholder.svg",
     "description": "Premium Under Armour men's polo golf shirt with Lila's Fund branding.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
     "category": "apparel"
@@ -30,7 +30,7 @@
     "id": "long-sleeve-shirt",
     "name": "Lila's Fund Long Sleeve Shirt",
     "price": 30.00,
-    "image": "/images/products/long-sleeve-shirt.jpg",
+    "image": "/images/products/placeholder.svg",
     "description": "Cozy long sleeve shirt with Lila's Fund design.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
     "category": "apparel"
@@ -39,7 +39,7 @@
     "id": "chuck-a-puck-ls",
     "name": "Chuck-A-Puck Event T-Shirt (LS)",
     "price": 30.00,
-    "image": "/images/products/chuck-a-puck-ls.jpg",
+    "image": "/images/products/placeholder.svg",
     "description": "Long sleeve event t-shirt from the Chuck-A-Puck fundraiser.",
     "sizes": ["S", "M", "L", "XL", "2XL"],
     "category": "apparel"
@@ -48,7 +48,7 @@
     "id": "youth-heart-month-tee",
     "name": "Youth Heart Month T-Shirt",
     "price": 11.00,
-    "image": "/images/products/youth-heart-month-tee.jpg",
+    "image": "/images/products/placeholder.svg",
     "description": "Youth t-shirt celebrating Heart Month awareness.",
     "sizes": ["YS", "YM", "YL"],
     "category": "youth"
@@ -57,7 +57,7 @@
     "id": "youth-long-sleeve-tee",
     "name": "Youth Long Sleeve Tee",
     "price": 19.00,
-    "image": "/images/products/youth-long-sleeve-tee.jpg",
+    "image": "/images/products/placeholder.svg",
     "description": "Youth long sleeve tee with Lila's Fund logo.",
     "sizes": ["YS", "YM", "YL"],
     "category": "youth"
@@ -66,7 +66,7 @@
     "id": "youth-long-sleeve-tee-premium",
     "name": "Youth Long Sleeve Tee (Premium)",
     "price": 25.00,
-    "image": "/images/products/youth-long-sleeve-tee-premium.jpg",
+    "image": "/images/products/placeholder.svg",
     "description": "Premium youth long sleeve tee with special Lila's Fund design.",
     "sizes": ["YS", "YM", "YL"],
     "category": "youth"
@@ -75,7 +75,7 @@
     "id": "trucker-cap",
     "name": "Lila's Fund Trucker Cap",
     "price": 17.50,
-    "image": "/images/products/trucker-cap.jpg",
+    "image": "/images/products/placeholder.svg",
     "description": "Classic trucker cap with embroidered Lila's Fund logo.",
     "sizes": ["One Size"],
     "category": "accessories"

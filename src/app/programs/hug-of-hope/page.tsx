@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Heart, Gift } from "lucide-react";
+import { assetUrl } from "@/lib/base-path";
 import Hero from "@/components/common/Hero";
 import Section, { SectionHeader } from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
@@ -26,7 +27,7 @@ export default function HugOfHopePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/misc/hug-of-hope-quilt.svg"
+                src={assetUrl("/images/misc/hug-of-hope-quilt.svg")}
                 alt="Lila's Hug of Hope quilt"
                 fill
                 className="object-cover"
@@ -108,7 +109,7 @@ export default function HugOfHopePage() {
             </div>
             <div className="order-1 md:order-2 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/misc/snuggle-time.svg"
+                src={assetUrl("/images/misc/snuggle-time.svg")}
                 alt="Snuggle time with Lila's quilt"
                 fill
                 className="object-cover"

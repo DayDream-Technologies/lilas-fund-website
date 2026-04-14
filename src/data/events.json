@@ -8,7 +8,7 @@
     "description": "Join us for a fun day of cornhole to raise funds for families in need. Teams compete in a bracket-style tournament with prizes for winners.",
     "ticketUrl": "https://www.lilasfund.org",
     "type": "fundraiser",
-    "image": "/images/events/cornhole-tournament.jpg"
+    "image": "/images/events/placeholder.svg"
   },
   {
     "id": "poker-run-florida-2025",
@@ -19,7 +19,7 @@
     "description": "A scenic motorcycle poker run through Florida to raise money for Ronald McDonald House Charities.",
     "ticketUrl": "https://www.lilasfund.org",
     "type": "fundraiser",
-    "image": "/images/events/poker-run-florida.jpg"
+    "image": "/images/events/placeholder.svg"
   },
   {
     "id": "golf-outing-kalamazoo-2025",
@@ -30,7 +30,7 @@
     "description": "Our inaugural Kalamazoo golf outing. Enjoy a day on the course while supporting families caring for hospitalized children.",
     "ticketUrl": "https://www.lilasfund.org",
     "type": "fundraiser",
-    "image": "/images/events/golf-outing-kalamazoo.jpg"
+    "image": "/images/events/placeholder.svg"
   },
   {
     "id": "poker-run-michigan-2025",
@@ -41,7 +41,7 @@
     "description": "Michigan's edition of our popular motorcycle poker run fundraiser.",
     "ticketUrl": "https://www.lilasfund.org",
     "type": "fundraiser",
-    "image": "/images/events/poker-run-michigan.jpg"
+    "image": "/images/events/placeholder.svg"
   },
   {
     "id": "heart-walk-2026",
@@ -52,7 +52,7 @@
     "description": "Walk with Team Lila's Fund at the annual Congenital Heart Walk. Help raise awareness and funds for CHD research.",
     "ticketUrl": "https://www.lilasfund.org",
     "type": "walk",
-    "image": "/images/events/heart-walk.jpg"
+    "image": "/images/events/placeholder.svg"
   },
   {
     "id": "golf-outing-gr-2025",
@@ -63,6 +63,6 @@
     "description": "Our signature Grand Rapids golf outing returns for its third year. A full day of golf, food, and fundraising.",
     "ticketUrl": "https://www.lilasfund.org",
     "type": "fundraiser",
-    "image": "/images/events/golf-outing-gr.jpg"
+    "image": "/images/events/placeholder.svg"
   }
 ]

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { assetUrl } from "@/lib/base-path";
 
 interface Sponsor {
   name: string;
@@ -22,7 +23,7 @@ export default function SponsorBar({ sponsors }: SponsorBarProps) {
           const img = (
             <div className="flex-shrink-0 w-28 h-16 relative grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
               <Image
-                src={sponsor.logo}
+                src={assetUrl(sponsor.logo)}
                 alt={sponsor.name}
                 fill
                 className="object-contain"

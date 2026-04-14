@@ -7,6 +7,7 @@ import Card, { CardBody } from "@/components/ui/Card";
 import TeamMember from "@/components/common/TeamMember";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 import { Heart, Target, Eye } from "lucide-react";
+import { assetUrl } from "@/lib/base-path";
 import team from "@/data/team.json";
 import testimonials from "@/data/testimonials.json";
 
@@ -80,7 +81,7 @@ export default function AboutPage() {
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="relative h-64 md:h-80">
               <Image
-                src="/images/misc/kelley-family.svg"
+                src={assetUrl("/images/misc/kelley-family.svg")}
                 alt="The Kelley Family"
                 fill
                 className="object-cover"
